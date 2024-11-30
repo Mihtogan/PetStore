@@ -22,6 +22,12 @@ class StartFragment : Fragment() {
         return bindings!!.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        viewModel.getPetsByStatus()
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         bindings = null
