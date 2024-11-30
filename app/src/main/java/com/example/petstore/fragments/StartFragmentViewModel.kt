@@ -19,6 +19,7 @@ class StartFragmentViewModel @Inject constructor(val petStoreApi: PetStoreApi) :
                 val pets = petStoreApi.getPetsFindByStatus(Statuses.available, Statuses.sold)
                 Log.d("My_Log", pets.first().toString())
             } catch (e: Exception) {
+
                 Log.e("My_Log", e.message.toString())
             }
         }

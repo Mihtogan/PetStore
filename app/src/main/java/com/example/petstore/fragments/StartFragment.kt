@@ -28,6 +28,7 @@ class StartFragment : Fragment() {
         viewModel.getPetsByStatus()
     }
 
+
     override fun onDestroyView() {
         super.onDestroyView()
         bindings = null

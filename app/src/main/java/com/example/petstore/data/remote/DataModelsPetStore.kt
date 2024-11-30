@@ -51,5 +51,5 @@ data class User(
 )
 
 enum class Statuses {
-    available, pending, sold
+    available, pending, sold,
 }
