@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/startFragment"
+        android:icon="@android:drawable/ic_menu_report_image"
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/petListFragment"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Dashboard"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="Profile"
+        app:showAsAction="ifRoom" />
+</menu>
