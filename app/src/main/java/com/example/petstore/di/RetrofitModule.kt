@@ -1,5 +1,6 @@
 package com.example.petstore.di
 
+import com.example.petstore.data.remote.PetStoreApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -36,4 +37,10 @@ class RetrofitModule {
             .client(okHttpClient)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
+
+
+    @Provides
+    @Singleton
+    fun providePetStoreApi(retrofit: Retrofit): PetStoreApi =
+        retrofit.create(PetStoreApi::class.java)
 }
